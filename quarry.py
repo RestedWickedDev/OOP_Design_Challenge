@@ -40,7 +40,7 @@ class Quarry:
         self.crystal = list()
 
     def obtain_ore(self, name, value):
-        name = Ore("iron", value)
+        name = Ore(self.resources, value)
         self.ore.append(name)
 
     def obtain_crystal(self, name, value):
